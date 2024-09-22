@@ -1,0 +1,33 @@
+<!-- reservation-list.component.html -->
+<div class="reservation-list">
+    <button class="back-button" (click)="goBack()">Accueil</button>
+    <h2>Your Reservations</h2>
+    <table *ngIf="reservations.length > 0; else noReservations">
+        <thead>
+            <tr>
+                <th>Car Image</th>
+                <th>Marque</th>
+                <th>Details</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let reservation of reservations">
+                <td><img [src]="reservation.image" alt="Car image" class="car-image"></td>
+                <td>{{ reservation.marque }}</td>
+                <td>{{ reservation.details }}</td>
+                <td>{{ reservation.debut }}</td>
+                <td>{{ reservation.fin }}</td>
+                <td>
+                    <button (click)="deleteReservation(reservation.id)">🗑️</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <ng-template #noReservations>
+        <p>No reservations found.</p>
+    </ng-template>
+</div>

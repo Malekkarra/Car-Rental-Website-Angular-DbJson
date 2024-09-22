@@ -1,0 +1,384 @@
+{
+  "reservations": [
+    {
+      "id": "dd3b",
+      "userId": "1",
+      "carId": "10",
+      "image": "assets/car10.jpg",
+      "marque": "Volkswagen Golf",
+      "details": "Description de Volkswagen Golf...",
+      "debut": "2024-06-01",
+      "fin": "2024-06-02"
+    },
+    {
+      "id": "e21c",
+      "userId": "1",
+      "carId": "8",
+      "image": "assets/car8.jpg",
+      "marque": "Tesla Model 3",
+      "details": "Description de Tesla Model 3...",
+      "debut": "2024-05-01",
+      "fin": "2024-05-31"
+    },
+    {
+      "id": "7b59",
+      "userId": "1",
+      "carId": null,
+      "image": "assets/car13.jpg",
+      "marque": "Kia Optima",
+      "details": "Description de Kia Optima...",
+      "debut": "2024-05-01",
+      "fin": "2024-05-08"
+    },
+    {
+      "id": "e05f",
+      "userId": "2",
+      "carId": "3",
+      "image": "assets/car3.jpg",
+      "marque": "Ford Mustang",
+      "details": "Description de Ford Mustang...",
+      "debut": "2024-05-01",
+      "fin": "2024-05-31"
+    },
+    {
+      "id": "6e1c",
+      "userId": "2",
+      "carId": "5",
+      "image": "assets/car5.jpg",
+      "marque": "BMW 3 Series",
+      "details": "Description de BMW 3 Series...",
+      "debut": "2024-05-12",
+      "fin": "2024-05-31"
+    },
+    {
+      "id": "6cf3",
+      "userId": "1",
+      "carId": "1",
+      "image": "assets/car1.jpg",
+      "marque": "Toyota Camry",
+      "details": "Description de Toyota Camry...",
+      "debut": "2024-06-01",
+      "fin": "2024-06-13"
+    },
+    {
+      "id": "f973",
+      "userId": "1",
+      "carId": "5",
+      "image": "assets/car5.jpg",
+      "marque": "BMW 3 Series",
+      "details": "Description de BMW 3 Series...",
+      "debut": "2024-06-04",
+      "fin": "2024-06-13"
+    },
+    {
+      "id": "ccd0",
+      "userId": "1",
+      "carId": "7",
+      "image": "assets/car7.jpg",
+      "marque": "Audi A4",
+      "details": "Description de Audi A4...",
+      "debut": "2024-06-04",
+      "fin": "2024-06-20"
+    },
+    {
+      "id": "57f9",
+      "userId": "1",
+      "carId": "3",
+      "image": "assets/car3.jpg",
+      "marque": "Ford Mustang",
+      "details": "Description de Ford Mustang...",
+      "debut": "2024-10-05",
+      "fin": "2024-06-07"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "Email": "malekkarra@gmail.com",
+      "Password": "74886e9b1cd8e7425528638eaeb11224",
+      "fullname": "malekkarra"
+    },
+    {
+      "id": "2",
+      "Email": "solaimabellaaj@gmail.com",
+      "Password": "c2281c24567626c3f69f09756d690b2c",
+      "fullname": "solaimabellaaj"
+    },
+    {
+      "id": "3",
+      "Email": "skandarkhabou@gmail.com",
+      "Password": "93b8e55ed9097162ae3eea32b0d13880",
+      "fullname": "skandarkhabou"
+    },
+    {
+      "id": "4",
+      "Email": "yesminetrabelsi@gmail.com",
+      "Password": "d168d1659af1fe5996aa0793c14c6091",
+      "fullname": "yesminetrabelsi"
+    },
+    {
+      "id": 5,
+      "Email": "imenlahiani@gmail.com",
+      "Password": "44a04efb609b8516acf778e7e1e7d8e7",
+      "fullname": "imenlahiani"
+    }
+  ],
+  "cars": [
+    {
+      "id": "1",
+      "image": "assets/car1.jpg",
+      "marque": "Toyota Camry",
+      "details": "Description de Toyota Camry...",
+      "indisponibilites": [
+        {
+          "debut": "2024-04-10",
+          "fin": "2024-04-15"
+        },
+        {
+          "debut": "2024-08-20",
+          "fin": "2024-08-25"
+        },
+        {
+          "debut": "2024-05-01",
+          "fin": "2024-05-31"
+        },
+        {
+          "debut": "2024-07-01",
+          "fin": "2024-07-05"
+        },
+        {
+          "debut": "2024-06-01",
+          "fin": "2024-06-13"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "image": "assets/car3.jpg",
+      "marque": "Ford Mustang",
+      "details": "Description de Ford Mustang...",
+      "indisponibilites": [
+        {
+          "debut": "2024-06-01",
+          "fin": "2024-06-05"
+        },
+        {
+          "debut": "2024-07-20",
+          "fin": "2024-07-25"
+        },
+        {
+          "debut": "2024-05-01",
+          "fin": "2024-05-31"
+        },
+        {
+          "debut": "2024-06-06",
+          "fin": "2024-06-07"
+        },
+        {
+          "debut": "2024-10-05",
+          "fin": "2024-06-07"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "image": "assets/car4.jpg",
+      "marque": "Chevrolet Corvette",
+      "details": "Description de Chevrolet Corvette...",
+      "indisponibilites": [
+        {
+          "debut": "2024-06-10",
+          "fin": "2024-06-15"
+        },
+        {
+          "debut": "2024-08-01",
+          "fin": "2024-08-05"
+        },
+        {
+          "debut": "2024-05-01",
+          "fin": "2024-05-17"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "image": "assets/car5.jpg",
+      "marque": "BMW 3 Series",
+      "details": "Description de BMW 3 Series...",
+      "indisponibilites": [
+        {
+          "debut": "2024-07-01",
+          "fin": "2024-07-05"
+        },
+        {
+          "debut": "2024-10-10",
+          "fin": "2024-10-15"
+        },
+        {
+          "debut": "2024-05-12",
+          "fin": "2024-05-31"
+        },
+        {
+          "debut": "2024-06-04",
+          "fin": "2024-06-13"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "image": "assets/car6.jpg",
+      "marque": "Mercedes-Benz C-Class",
+      "details": "Description de Mercedes-Benz C-Class...",
+      "indisponibilites": [
+        {
+          "debut": "2024-05-20",
+          "fin": "2024-05-25"
+        },
+        {
+          "debut": "2024-09-05",
+          "fin": "2024-09-10"
+        },
+        {
+          "debut": "2024-06-04",
+          "fin": "2024-06-13"
+        },
+        {
+          "debut": "2024-06-26",
+          "fin": "2024-06-30"
+        },
+        {
+          "debut": "2024-11-11",
+          "fin": "2024-06-20"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "image": "assets/car7.jpg",
+      "marque": "Audi A4",
+      "details": "Description de Audi A4...",
+      "indisponibilites": [
+        {
+          "debut": "2024-04-25",
+          "fin": "2024-04-30"
+        },
+        {
+          "debut": "2024-08-10",
+          "fin": "2024-08-15"
+        },
+        {
+          "debut": "2024-05-01",
+          "fin": "2024-05-25"
+        },
+        {
+          "debut": "2024-06-04",
+          "fin": "2024-06-20"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "image": "assets/car8.jpg",
+      "marque": "Tesla Model 3",
+      "details": "Description de Tesla Model 3...",
+      "indisponibilites": [
+        {
+          "debut": "2024-06-20",
+          "fin": "2024-06-25"
+        },
+        {
+          "debut": "2024-07-10",
+          "fin": "2024-07-15"
+        },
+        {
+          "debut": "2024-05-01",
+          "fin": "2024-05-31"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "image": "assets/car9.jpg",
+      "marque": "Nissan Altima",
+      "details": "Description de Nissan Altima...",
+      "indisponibilites": [
+        {
+          "debut": "2024-05-01",
+          "fin": "2024-05-06"
+        },
+        {
+          "debut": "2024-10-01",
+          "fin": "2024-10-06"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "image": "assets/car10.jpg",
+      "marque": "Volkswagen Golf",
+      "details": "Description de Volkswagen Golf...",
+      "indisponibilites": [
+        {
+          "debut": "2024-06-15",
+          "fin": "2024-06-20"
+        },
+        {
+          "debut": "2024-09-10",
+          "fin": "2024-09-15"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "image": "assets/car11.jpg",
+      "marque": "Subaru Outback",
+      "details": "Description de Subaru Outback...",
+      "indisponibilites": [
+        {
+          "debut": "2024-04-20",
+          "fin": "2024-04-25"
+        },
+        {
+          "debut": "2024-08-25",
+          "fin": "2024-08-30"
+        },
+        {
+          "debut": "2024-05-06",
+          "fin": "2024-05-31"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "image": "assets/car12.jpg",
+      "marque": "Hyundai Sonata",
+      "details": "Description de Hyundai Sonata...",
+      "indisponibilites": [
+        {
+          "debut": "2024-07-05",
+          "fin": "2024-07-10"
+        },
+        {
+          "debut": "2024-12-01",
+          "fin": "2024-12-06"
+        },
+        {
+          "debut": "2024-05-08",
+          "fin": "2024-05-25"
+        }
+      ]
+    },
+    {
+      "id": "d755",
+      "image": "assets/car14.jpg",
+      "marque": "cdgh",
+      "details": "cxgcnj",
+      "indisponibilites": [
+        {
+          "debut": "2024-06-05",
+          "fin": "2024-06-07"
+        }
+      ]
+    }
+  ]
+}

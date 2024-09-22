@@ -1,0 +1,121 @@
+.nos-vehicules-container {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nos-vehicules-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/car.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .title-bar {
+    background-color: #1b1b1bd2;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items */
+    position: relative;
+    background-color: #494949ac;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  .accueil-btn {
+    position: absolute; /* Absolute positioning to pull it out of the flex flow */
+    left: 25px; /* Adjust based on padding */
+    background-color: #9d5900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .accueil-btn:hover {
+    background-color: #966f1a;
+  }
+  
+  
+  
+  
+  .cars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .car-item {
+    width: calc(22.222% - 20px); /* 3 columns */
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    background-color: white; /* White background for the card */
+    padding: 15px; /* Padding around the content */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .car-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .car-item img {
+    width: 80%; /* Makes the image fit within the card */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and the details */
+  }
+  
+  .car-details {
+    padding: 20px;
+  }
+  
+  .reserver-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .reserver-btn:hover {
+    background-color: #218838;
+  }
+ /* styles.css or nos-vehicules.component.css */
+.green-btn {
+    background-color: #28a745; /* Bootstrap's 'success' green */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+  }
+  
+  .green-btn:hover {
+    background-color: #218838; /* A slightly darker green for hover effect */
+  }
+  

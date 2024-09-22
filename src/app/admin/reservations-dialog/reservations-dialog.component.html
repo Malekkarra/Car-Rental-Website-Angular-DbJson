@@ -1,0 +1,23 @@
+<div mat-dialog-content>
+    <h2>Reservations List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Car Marque</th>
+          <th>Indisponibilité</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reservation of reservations">
+          <td>{{ reservation.userId }}</td>
+          <td>{{ reservation.marque }}</td>
+          <td>{{ reservation.debut }} - {{ reservation.fin }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="close()">Close</button>
+  </div>
+  

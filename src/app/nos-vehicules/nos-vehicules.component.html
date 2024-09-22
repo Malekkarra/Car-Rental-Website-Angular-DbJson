@@ -1,0 +1,21 @@
+<div class="nos-vehicules-container">
+  
+    <div class="title-bar">
+        <button class="accueil-btn" routerLink="/dashboard">Accueil</button>
+        <div class="title">Nos Véhicules</div>
+      </div>
+      
+      <!-- The rest of your component's HTML -->
+      
+    <div class="cars-grid">
+      <div class="car-item" *ngFor="let car of cars">
+        <img src="{{ car.image }}" alt="Car Image">
+        <div class="car-details">
+          <p>{{ car.marque }}</p>
+          <p>{{ car.details }}</p>
+          <button class="reserver-btn green-btn" (click)="goToReservationPage(car)">Réserver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

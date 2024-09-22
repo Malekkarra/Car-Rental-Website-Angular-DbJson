@@ -1,0 +1,104 @@
+/* Style for the whole component, applying the background image */
+:host {
+    display: block;
+    min-height: 100vh; /* Full height of the viewport */
+    background-image: url('/assets/car.jpg'); /* Your background image */
+    background-size: cover; /* Cover the entire space */
+    background-position: center center; /* Center the background */
+  }
+  
+  /* Styles for the reservation form */
+  .reservation-form {
+    background-color: #161616df; /* Dark blue background */
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the form in the page */
+    width: 70%;
+    max-width: 500px; /* Max width to keep the form readable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+    color: white; /* Text color */
+  }
+  
+  /* Styles for input fields */
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    width: 100%; /* Make input fields take full width of the form */
+    padding: 10px; /* Padding for better readability */
+    margin: 10px 0; /* Space between inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    background-color: #fff; /* White background for readability */
+    color: #000; /* Text color */
+  }
+  
+  /* Style for the button container with dark yellow background */
+  .button-container {
+    background-color: #d2a679; /* Dark yellow */
+    padding: 20px; /* Padding around the button */
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space above the button container */
+  }
+  
+  /* Styles for the 'Done' button */
+  button {
+    background-color: #734d00; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Mouse cursor change to indicate clickability */
+    font-size: 16px; /* Larger font size for better visibility */
+  }
+  
+  button:hover {
+    background-color: #c07f2a; /* Slightly darker blue on hover for interaction feedback */
+  }
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  /* Top Bar with Back Button */
+.top-bar {
+  width: 100%;
+  padding: 8px 20px;
+  background-color: #4d4d4dba; /* Dark background for the top bar */
+  color: #fff;
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the bar is above other content */
+}
+
+.back-button {
+  background-color: #916300; /* Blue background for the button */
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #d8a132; /* Darker shade on hover */
+}
+
+/* Content Container */
+.content-container {
+  padding-top: 100px; /* Add padding to avoid overlapping with the top bar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+  width: 100%;
+}
+
+/* Reservation Title */
+.reservation-title {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Adjust the .reservation-form class as needed */

@@ -1,0 +1,65 @@
+
+
+:host {
+    display: block;
+    min-height: 100vh; /* Full height of the viewport */
+    background-image: url('/assets/car.jpg'); /* Your background image */
+    background-size: cover; /* Cover the entire space */
+    background-position: center center; /* Center the background */
+    color: rgb(255, 255, 255);
+  }
+  
+  .reservation-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Background property removed here, it's now set globally */
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #5a3900; /* Green background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(34, 34, 34, 0.841); /* Light background for table to ensure content readability */
+    overflow-x: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.256);
+    
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid  rgba(45, 45, 45, 0.741);
+    color: white; 
+}
+
+th {
+    background-color:  rgba(44, 44, 44, 0.777);
+}
+
+.car-image {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .car-image {
+        width: 70px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

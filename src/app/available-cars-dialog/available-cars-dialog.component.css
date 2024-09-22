@@ -1,0 +1,74 @@
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .car-card {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .car-card img {
+    width: 100px; /* Ajustez selon la taille souhaitée */
+  }
+  /* Style pour le conteneur de dialogue */
+.mat-dialog-container {
+    border: 2px solid black; /* Contour noir */
+    border-radius: 5px; /* Coins arrondis pour le conteneur de dialogue */
+    overflow: hidden; /* Empêche le contenu de déborder */
+    max-width: 80vw; /* Largeur maximale du dialogue à 80% de la largeur de la fenêtre */
+  }
+  
+  /* Style pour le bouton de fermeture 'X' */
+  .close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: black; /* Couleur du bouton 'X' */
+  }
+  
+  /* Style pour le conteneur principal des cartes de voitures */
+  .cars-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante */
+    justify-content: flex-start; /* Alignement des cartes à gauche */
+    gap: 20px; /* Espace entre et autour des cartes de voitures */
+    padding: 10px; /* Padding à l'intérieur du conteneur pour éviter que les éléments touchent les bords */
+  }
+  
+  /* Style pour chaque carte de voiture */
+  .car-card {
+    flex: 0 1 calc(33.333% - 20px); /* Prend 1/3 de l'espace disponible, moins l'écart */
+    display: flex;
+    flex-direction: column; /* Organise le contenu de la carte verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    border: 3px solid #ccc; /* Contour subtil pour chaque carte */
+    padding: 10px; /* Espace autour du contenu de la carte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour la profondeur */
+    max-width: 250px; /* Largeur maximale pour chaque carte */
+  }
+  
+  /* Style pour les images des voitures dans les cartes */
+  .car-card img {
+    width: 100%; /* S'adapte à la largeur de la carte */
+    max-height: 150px; /* Hauteur maximale pour les images */
+    object-fit: cover; /* Garantit que les images couvrent l'espace disponible sans se déformer */
+    margin-bottom: 10px; /* Espace entre l'image et le texte en dessous */
+  }
+  
+  /* Style pour les boutons 'Réserver maintenant' */
+  .car-card button {
+    background-color: green; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Aucun contour pour le bouton */
+    padding: 10px 20px; /* Espace intérieur autour du texte du bouton */
+    margin-top: 10px; /* Espace au-dessus du bouton */
+    cursor: pointer; /* Change le curseur pour indiquer la possibilité de cliquer */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+  }
+  
+  .car-card button:hover {
+    background-color: darkgreen; /* Couleur de fond du bouton au survol */
+  }
+  

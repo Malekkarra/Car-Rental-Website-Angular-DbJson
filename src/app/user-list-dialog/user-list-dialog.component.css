@@ -1,0 +1,69 @@
+/* Overlay covering the entire screen */
+.overlay {
+  position: fixed; /* Fixed position */
+  top: 0; left: 0; right: 0; bottom: 0; /* Full screen */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  z-index: 1000; /* High z-index to be on top of other content */
+}
+
+/* Dialog container styling */
+.dialog-container {
+  background: rgb(255, 255, 255); /* White background */
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 80%; /* Taking 80% of the screen width */
+  max-width: 600px; /* Maximum width */
+}
+
+/* Dialog header styling */
+.dialog-header {
+  display: flex;
+  justify-content: space-between; /* Space between title and button */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px; /* Margin below the header */
+}
+
+.dialog-title {
+  margin: 0; /* No margin to control spacing explicitly */
+  color: #333; /* Dark grey color for text */
+  font-size: 24px; /* Large font size for visibility */
+}
+
+/* Close button styling */
+.close-button {
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* No border */
+  background: transparent; /* Transparent background */
+  font-size: 24px; /* Large font size for easy clicking */
+}
+
+/* Table container styling */
+.table-container {
+  overflow-x: auto; /* Allows scrolling horizontally if table is too wide */
+}
+
+table {
+  width: 100%; /* Full width of its container */
+  border-collapse: collapse; /* Collapses border to avoid double border */
+  table-layout: fixed; /* Helps with equal column sizing */
+}
+
+th, td {
+  text-align: left; /* Left align text */
+  padding: 12px; /* Padding inside cells */
+  border-bottom: 1px solid #440000; /* Light grey border for each row */
+}
+
+th {
+  background-color: #ffffffb9; /* Light grey background for headers */
+  color: #333; /* Dark grey text for contrast */
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9ad;
+}

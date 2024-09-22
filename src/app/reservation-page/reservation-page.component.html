@@ -1,0 +1,24 @@
+<div class="top-bar">
+  <button class="back-button" (click)="goBack()">Back</button>
+</div>
+
+<!-- Main Content Container -->
+<div class="content-container">
+
+  <!-- Reservation Title -->
+  <div class="reservation-title">Make Your Reservation</div>
+<div class="reservation-form">
+  <form #reservationForm="ngForm" (ngSubmit)="onSubmit(reservationForm)">
+    <div>
+      <label for="pickupDate">Date de début:</label>
+      <input id="pickupDate" name="pickupDate" type="date" ngModel required>
+    </div>
+
+    <div>
+      <label for="dropoffDate">Date de fin:</label>
+      <input id="dropoffDate" name="dropoffDate" type="date" ngModel required>
+    </div>
+
+    <button type="submit" [disabled]="!reservationForm.valid">Réserver</button>
+  </form>
+</div>

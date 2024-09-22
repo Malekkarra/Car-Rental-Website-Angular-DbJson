@@ -1,0 +1,36 @@
+<!-- dashboard.component.html -->
+<div class="dashboard-container">
+    
+    <div class="top-image"></div> <!-- Conteneur pour l'image supérieure -->
+    
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/assets/Logo2.png" alt="Logo" class="logo"> <!-- Assurez-vous que le chemin vers votre logo est correct -->
+        </div>
+        <a href="#home">Accueil</a>
+        <a routerLink="/nos-vehicules" class="nav-link">Nos Véhicules</a>
+        <a routerLink="/reservation-list" class="nav-link">Ma Liste</a>
+        <a routerLink="/a-propos" class="nav-link">À propos</a>
+        
+
+        
+        
+        <button class="logout-btn" (click)="logout()">Déconnexion</button>
+    </div>
+
+    <div class="reservation-form">
+        <form (ngSubmit)="trouverVotreVoiture()">
+            <div class="form-row">
+                <label for="pickup-date">Date de début :</label>
+                <input type="date" id="pickup-date" [(ngModel)]="pickupDate" name="pickupDate" required>
+            </div>
+            <div class="form-row">
+                <label for="dropoff-date">Date de fin :</label>
+                <input type="date" id="dropoff-date" [(ngModel)]="dropoffDate" name="dropoffDate" required>
+            </div>
+            <div class="form-row">
+                <button type="submit">Trouver votre voiture</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<mat-dialog-content class="cars-container">
+    <div *ngFor="let car of cars" fxLayout="column" fxLayoutAlign="center center" class="car-card">
+      <img [src]="car.image" alt="{{ car.marque }}">
+      <h2>{{ car.marque }}</h2>
+      <button mat-raised-button color="primary" (click)="reserverVoiture(car)">Réserver maintenant</button>
+    </div>
+  </mat-dialog-content>
+  

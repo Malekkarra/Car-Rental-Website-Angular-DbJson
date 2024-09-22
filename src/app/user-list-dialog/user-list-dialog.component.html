@@ -1,0 +1,26 @@
+<div class="overlay">
+  <div class="dialog-container">
+    <div class="dialog-header">
+      <h2 class="dialog-title">Users List</h2>
+      <button class="close-button" (click)="closeDialog()">×</button>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+           
+            <th>Email</th>
+            <th>Full Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+           
+            <td>{{ user.Email }}</td>
+            <td>{{ user.fullname }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
