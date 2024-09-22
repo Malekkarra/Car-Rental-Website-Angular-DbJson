@@ -8,3 +8,13 @@ The **real-time availability** of vehicles is checked through the reservation sy
 ensuring that customers can only book available cars.
 The project provides a smooth and efficient experience for both administrators and users,
 combining a robust backend with a dynamic, user-friendly frontend interface.
+
+**Website UI** 🖼️
+
+![](Screenshots/Capture1.jpeg)
+![](Screenshots/Capture2.jpeg)
+![](Screenshots/Capture3.jpeg)
+
+**Admin UI** 🖼️
+
+![](Screenshots/admin.jpeg)
